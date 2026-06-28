@@ -66,6 +66,19 @@
   },
   {
     "id": 6,
+    "title": "Casual Selfie Portrait",
+    "category": "characters",
+    "imageUrl": "images/characters/casual-selfie-portrait.webp",
+    "tool": "Stable Diffusion",
+    "tags": [
+      "characters",
+      "portrait",
+      "photorealistic"
+    ],
+    "prompt": "A casual photo. A casual photo of Professional Photo, Photorealistic, natural, unretouched look., soft focus, depth of field, 8k photo, HDR, professional lighting, taken with Canon EOS R5, DSLR, 75mm lens, shot in extreme close-up, portrays the young woman (( A realistic close-up photograph of a young woman with warm olive skin, voluminous dark brown curly hair framing her face, and a gentle closed-mouth smile, captured from a slightly high angle in a casual selfie pose as she looks up toward the camera with large brown eyes and long dark lashes, her thick well-defined eyebrows slightly raised and her skin showing natural texture with visible pores, faint freckles, and subtle redness across the cheeks and forehead, glossy natural lips with a soft pink tone, wearing a fitted red tank top with white trim along the neckline and straps, a small gold heart-shaped earring visible in her left ear, soft natural daylight illuminating her face evenly from the front and side creating gentle highlights on her cheekbones and nose without harsh shadows, shallow depth of field keeping her face and shoulders sharply detailed while the background of striped fabric and soft surfaces remains gently blurred, shot on a smartphone camera such as an iPhone with high-resolution sensor, natural color grading, crisp skin details, and realistic bokeh, photorealistic quality, ultra-detailed textures, soft even lighting, intimate and casual atmosphere. )) with a standard focal length of 35mm at f/5.6, achieving a moderate depth of field that keeps both the subject and the interior background sharply in focus. The overall composition presents a full-length portrait with ultra-detailed, photorealistic quality in 8K.. It's a casual photo., casual photo"
+  },
+  {
+    "id": 7,
     "title": "Cinematic Action Hero",
     "category": "characters",
     "imageUrl": "images/characters/cinematic-action-hero.webp",
