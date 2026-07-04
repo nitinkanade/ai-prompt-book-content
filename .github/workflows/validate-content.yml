@@ -1,0 +1,42 @@
+name: Validate content
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Validate content integrity
+        run: python3 scripts/validate_content.py
+
+      - name: Require contentVersion bump when content changed
+        if: github.event_name == 'push'
+        run: |
+          BEFORE="${{ github.event.before }}"
+          # Skip on first push / forced history rewrite where 'before' is unknown
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            echo "No previous commit to compare; skipping version-bump check."
+            exit 0
+          fi
+          CHANGED=$(git diff --name-only "$BEFORE" HEAD -- '*.json' 'images/**' | grep -v '^version.json' || true)
+          if [ -z "$CHANGED" ]; then
+            echo "No content files changed; version bump not required."
+            exit 0
+          fi
+          echo "Content files changed:"
+          echo "$CHANGED"
+          OLD=$(git show "$BEFORE:version.json" 2>/dev/null | python3 -c "import json,sys; print(json.load(sys.stdin).get('contentVersion', 0))" || echo 0)
+          NEW=$(python3 -c "import json; print(json.load(open('version.json'))['contentVersion'])")
+          echo "contentVersion: $OLD -> $NEW"
+          if [ "$NEW" -le "$OLD" ]; then
+            echo "::error::Content changed but contentVersion was not incremented in version.json. The app will never fetch these changes."
+            exit 1
+          fi
