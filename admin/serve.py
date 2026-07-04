@@ -13,7 +13,7 @@ import subprocess
 import sys
 import webbrowser
 from datetime import date
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from PIL import Image
@@ -109,6 +109,12 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
 
     def do_POST(self):
+        # CSRF guard: browsers set Origin on cross-site requests; only
+        # accept requests from our own page (or none, e.g. curl).
+        origin = self.headers.get("Origin", "")
+        if origin and not origin.startswith(("http://localhost", "http://127.0.0.1")):
+            self._send({"error": "forbidden origin"}, 403)
+            return
         body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
         try:
             self._send(self._dispatch(self.path, body))
@@ -198,4 +204,4 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     print(f"Admin panel: http://localhost:{PORT}  (Ctrl+C to stop)")
     webbrowser.open(f"http://localhost:{PORT}")
-    HTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
+    ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

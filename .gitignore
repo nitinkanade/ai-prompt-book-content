@@ -1,0 +1,3 @@
+# Local staging area for raw/unprocessed uploads - never publish
+ai-prompt-book-raw/
+__pycache__/
