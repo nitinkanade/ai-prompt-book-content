@@ -25,7 +25,7 @@
     "name": "Characters",
     "slug": "characters",
     "image": "images/characters/cover.webp",
-    "promptCount": 7
+    "promptCount": 2
   },
   {
     "id": 5,
@@ -35,4 +35,3 @@
     "promptCount": 5
   }
 ]
-

@@ -1,70 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Space Explorer",
-    "category": "characters",
-    "imageUrl": "images/characters/space-explorer.webp",
-    "tool": "Midjourney",
-    "tags": [
-      "character",
-      "space",
-      "explorer"
-    ],
-    "prompt": "High-quality original concept art of a family-friendly space explorer character. Wearing a sleek white and blue spacesuit, a transparent dome helmet, posing confidently. The background is a vibrant colorful space nebula, clean character design, detailed but simple silhouette, 8k render."
-  },
-  {
-    "id": 2,
-    "title": "Village Inventor",
-    "category": "characters",
-    "imageUrl": "images/characters/village-inventor.webp",
-    "tool": "Stable Diffusion",
-    "tags": [
-      "character",
-      "inventor",
-      "village"
-    ],
-    "prompt": "Original cheerful village inventor character with handmade tools. Practical leather apron and utility belt, small messy workshop background filled with gadgets and blueprints, warm friendly expression, whimsical details, family-friendly Pixar-style concept art."
-  },
-  {
-    "id": 3,
-    "title": "Forest Ranger",
-    "category": "characters",
-    "imageUrl": "images/characters/forest-ranger.webp",
-    "tool": "Leonardo AI",
-    "tags": [
-      "character",
-      "ranger",
-      "nature"
-    ],
-    "prompt": "Original forest ranger fantasy character clad in a flowing green and brown cloak, holding an ornate wooden walking staff. Nature-inspired leaf accessories, calm confident pose, soft focus sun-dappled woodland background, highly polished character design."
-  },
-  {
-    "id": 4,
-    "title": "Cloud Pilot",
-    "category": "characters",
-    "imageUrl": "images/characters/cloud-pilot.webp",
-    "tool": "DALL-E",
-    "tags": [
-      "character",
-      "pilot",
-      "clouds"
-    ],
-    "prompt": "Original cloud pilot character wearing vintage leather goggles and a bright red flying scarf, showing a friendly smile. A small retro-futuristic flying propeller craft parked behind them on a cloud runway, beautiful blue sky setting, clean stylized character illustration."
-  },
-  {
-    "id": 5,
-    "title": "Kind Robot Helper",
-    "category": "characters",
-    "imageUrl": "images/characters/kind-robot-helper.webp",
-    "tool": "Firefly",
-    "tags": [
-      "character",
-      "robot",
-      "helper"
-    ],
-    "prompt": "Original kind robot helper character with rounded friendly shapes, an expressive glowing screen face displaying a smile, small utility backpack, bright orange and white color palette, clean studio backdrop, family-friendly toy design."
-  },
-  {
     "id": 6,
     "title": "Casual Selfie Portrait",
     "category": "characters",
@@ -91,4 +26,3 @@
     "prompt": "Gritty cinematic poster, black background with red grunge texture and film grain. Double exposure composition: Large close-up of a South Indian man's intense face and eye on left, monochrome with red rim lighting. Overlaid on right: full body of same bearded man in rolled-sleeve shirt and pants, holding a combat knife, looking back over shoulder. Dramatic red backlighting outlining hair and clothes. Large vertical red stylized text behind the figure with cracked texture."
   }
 ]
-
