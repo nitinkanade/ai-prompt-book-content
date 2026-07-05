@@ -25,7 +25,7 @@
     "name": "Characters",
     "slug": "characters",
     "image": "images/characters/cover.webp",
-    "promptCount": 2
+    "promptCount": 3
   },
   {
     "id": 5,
@@ -39,6 +39,13 @@
     "name": "Couples",
     "slug": "couples",
     "image": "images/couples/cover.webp",
+    "promptCount": 1
+  },
+  {
+    "id": 7,
+    "name": "Poster",
+    "slug": "poster",
+    "image": "images/poster/cover.webp",
     "promptCount": 1
   }
 ]

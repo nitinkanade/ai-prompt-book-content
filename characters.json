@@ -24,5 +24,18 @@
       "poster"
     ],
     "prompt": "Gritty cinematic poster, black background with red grunge texture and film grain. Double exposure composition: Large close-up of a South Indian man's intense face and eye on left, monochrome with red rim lighting. Overlaid on right: full body of same bearded man in rolled-sleeve shirt and pants, holding a combat knife, looking back over shoulder. Dramatic red backlighting outlining hair and clothes. Large vertical red stylized text behind the figure with cracked texture."
+  },
+  {
+    "id": 8,
+    "title": "Velvet Lounge Editorial",
+    "category": "characters",
+    "imageUrl": "images/characters/velvet-lounge-editorial.webp",
+    "tool": "Gemini",
+    "tags": [
+      "characters",
+      "fashion",
+      "editorial"
+    ],
+    "prompt": "Ultra-realistic high-fashion editorial, young man with messy hair over the eye, lounging casually on a luxurious velvet sofa in modern studio. Wearing silk ivory shirt half-open with layered necklaces, paired with cream tailored pants. Soft golden light and blurred chandelier glow in background. Elegant, classy, trending editorial. 100% Real Face 8K Resolution."
   }
 ]
