@@ -33,5 +33,12 @@
     "slug": "logos",
     "image": "images/logos/cover.webp",
     "promptCount": 5
+  },
+  {
+    "id": 6,
+    "name": "Couples",
+    "slug": "couples",
+    "image": "images/couples/cover.webp",
+    "promptCount": 1
   }
 ]

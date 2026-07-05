@@ -37,6 +37,7 @@
 <div class="bar">
   <button class="primary" onclick="openPrompt()">+ Add prompt</button>
   <button onclick="openCategory()">+ Add category</button>
+  <button onclick="openEditCategory()">✎ Edit category</button>
   <button class="publish" onclick="publish()">🚀 Publish (validate + push)</button>
   <span class="dim" id="git"></span>
 </div>
@@ -68,6 +69,22 @@
     <div style="margin-top:14px; display:flex; gap:8px; justify-content:flex-end">
       <button type="button" onclick="dlgCat.close()">Cancel</button>
       <button class="primary">Create</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dlgEditCat">
+  <h3 id="ecTitle">Edit category</h3>
+  <form method="dialog" onsubmit="return saveEditCategory(event)">
+    <label>Name (slug stays fixed)</label><input id="ecName" required>
+    <label>Cover image <span class="dim">(leave empty to keep current)</span></label>
+    <input id="ecImg" type="file" accept="image/*">
+    <div style="margin-top:14px; display:flex; gap:8px; justify-content:space-between">
+      <button type="button" class="danger" onclick="deleteCategory()">Delete category</button>
+      <span style="display:flex; gap:8px">
+        <button type="button" onclick="dlgEditCat.close()">Cancel</button>
+        <button class="primary">Save</button>
+      </span>
     </div>
   </form>
 </dialog>
@@ -128,6 +145,35 @@ function openPrompt(p) {
   dlg.showModal();
 }
 function openCategory() { dlgCat.showModal(); }
+function openEditCategory() {
+  const cat = DATA.categories.find(c => c.slug === current);
+  if (!cat) return toast('Select a category tab first');
+  document.getElementById('ecTitle').textContent = `Edit category: ${cat.slug}`;
+  document.getElementById('ecName').value = cat.name;
+  document.getElementById('ecImg').value = '';
+  dlgEditCat.showModal();
+}
+async function saveEditCategory(e) {
+  e.preventDefault();
+  try {
+    await api('/api/category/update', {
+      slug: current,
+      name: document.getElementById('ecName').value.trim(),
+      imageBase64: await fileToB64(document.getElementById('ecImg')),
+    });
+    toast('Category updated ✓'); dlgEditCat.close(); load();
+  } catch (err) { toast('Error: ' + err.message); }
+  return false;
+}
+async function deleteCategory() {
+  const cat = DATA.categories.find(c => c.slug === current);
+  const n = (DATA.prompts[current] || []).length;
+  if (!confirm(`Delete category "${cat.name}" with ${n} prompt(s)?\nThis removes ${current}.json and all its images.`)) return;
+  try {
+    await api('/api/category/delete', {slug: current});
+    toast('Category deleted ✓'); dlgEditCat.close(); current = null; load();
+  } catch (err) { toast('Error: ' + err.message); }
+}
 function fileToB64(input) {
   return new Promise((res) => {
     if (!input.files[0]) return res(null);

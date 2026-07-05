@@ -9,6 +9,7 @@ import base64
 import io
 import json
 import re
+import shutil
 import subprocess
 import sys
 import webbrowser
@@ -177,6 +178,30 @@ class Handler(BaseHTTPRequestHandler):
             write_json("categories.json", cats)
             write_json(f"{slug}.json", [])
             return {"ok": True, "slug": slug}
+
+        if path == "/api/category/update":
+            slug = b["slug"]
+            cats = read_json("categories.json")
+            cat = next((c for c in cats if c["slug"] == slug), None)
+            if cat is None:
+                raise ValueError(f"category '{slug}' not found")
+            if b.get("name"):
+                cat["name"] = b["name"]
+            if b.get("imageBase64"):
+                save_webp(b["imageBase64"], ROOT / cat["image"])
+            write_json("categories.json", cats)
+            return {"ok": True}
+
+        if path == "/api/category/delete":
+            slug = b["slug"]
+            cats = read_json("categories.json")
+            if not any(c["slug"] == slug for c in cats):
+                raise ValueError(f"category '{slug}' not found")
+            cats = [c for c in cats if c["slug"] != slug]
+            write_json("categories.json", cats)
+            (ROOT / f"{slug}.json").unlink(missing_ok=True)
+            shutil.rmtree(ROOT / "images" / slug, ignore_errors=True)
+            return {"ok": True}
 
         if path == "/api/publish":
             cats = read_json("categories.json")

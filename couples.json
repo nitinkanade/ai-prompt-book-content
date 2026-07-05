@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Golden Hour Couple",
+    "category": "couples",
+    "imageUrl": "images/couples/golden-hour-couple.webp",
+    "tool": "Gemini",
+    "tags": [
+      "couples",
+      "romantic",
+      "portrait"
+    ],
+    "prompt": "Ultra-realistic 4K cinematic romantic couple portrait, young South Asian couple sitting in a golden wheat field at sunset. The man in a black shirt hugs the woman lovingly, leaning close to her face. The woman wears a red embroidered traditional outfit with jewelry, eyes closed with a soft smile. Warm golden sunlight, dreamy background blur, natural expressions, romantic mood, DSLR photography, shallow depth of field."
+  }
+]
