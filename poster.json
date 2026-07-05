@@ -10,5 +10,17 @@
       "Poster"
     ],
     "prompt": "Epic cinematic action movie poster featuring a rugged, bearded male action hero with long windblown hair and intense eyes, waist-up composition holding a heavy shotgun vertically in his right hand, sweat and grime on his skin, tight dark t-shirt clinging to muscular frame, strong low-angle lighting with golden rim backlight and teal atmospheric fill, dramatic volumetric smoke and sparks. In the lower foreground a large naval ship silhouette left, massive explosion and fire midground, a car dramatically flipping and three silhouetted figures struggling on the deck of a vessel right, cinematic scale and depth. High contrast, hyper-detailed photorealism with gritty texture, film grain, subtle lens flares and dust motes, dynamic composition with central dominant hero, warm orange-gold highlights against cool teal ocean and sky, bold distressed block title at bottom, small production credits line beneath, high resolution poster layout, dramatic typography weight, intense, heroic, suspenseful mood."
+  },
+  {
+    "id": 2,
+    "title": "Lord Of War",
+    "category": "poster",
+    "imageUrl": "images/poster/lord-of-war.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "Movie",
+      "Poster"
+    ],
+    "prompt": "Hyper-detailed cinematic movie poster: centered close-up portrait of a middle-aged man's face constructed entirely from thousands of bullets, shells, casings and gun parts — rifle rounds form the hairline, clustered small cartridges create skin texture, spent casings and copper tips sculpt shadows and highlights, collar and suit built from stacked blackened bullets, tie assembled from brass shells. Piercing icy blue photorealistic eyes with reflective catchlights, neutral solemn expression, crisp jawline. Stark white minimalist background with a thin barcode-like border, bold large elegant serif title at the top reading \"LORD OF WAR\" and a small tagline beneath: \"Where there's a will, there's a weapon.\" Studio lighting, high contrast, dramatic rim light, extreme macro texture detail, photoreal collage, 300 dpi poster ratio vertical, subtle film grain and soft vignette for cinematic mood."
   }
 ]
