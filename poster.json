@@ -22,5 +22,27 @@
       "Poster"
     ],
     "prompt": "Hyper-detailed cinematic movie poster: centered close-up portrait of a middle-aged man's face constructed entirely from thousands of bullets, shells, casings and gun parts — rifle rounds form the hairline, clustered small cartridges create skin texture, spent casings and copper tips sculpt shadows and highlights, collar and suit built from stacked blackened bullets, tie assembled from brass shells. Piercing icy blue photorealistic eyes with reflective catchlights, neutral solemn expression, crisp jawline. Stark white minimalist background with a thin barcode-like border, bold large elegant serif title at the top reading \"LORD OF WAR\" and a small tagline beneath: \"Where there's a will, there's a weapon.\" Studio lighting, high contrast, dramatic rim light, extreme macro texture detail, photoreal collage, 300 dpi poster ratio vertical, subtle film grain and soft vignette for cinematic mood."
+  },
+  {
+    "id": 3,
+    "title": "NEON REQUIEM",
+    "category": "poster",
+    "imageUrl": "images/poster/neon-requiem.webp",
+    "tool": "Gemini",
+    "tags": [
+      "Poster"
+    ],
+    "prompt": "use attached image and to implement below , do not chage the facial details \n\nLow-angle cinematic poster composition featuring a stoic male portrait in three-quarter view occupying the upper two-thirds of the frame, stylized vector shading with layered flat color planes and strong contours, desaturated golds and olive skin tones rim-lit against a saturated magenta background; he wears a high-collar, quilted satin jacket rendered with sculptural highlights and deep shadows, eyes gazing upward with melancholic resolve. Foreground: classic late-1970s coupe with chrome bumper parked beneath a motel overhang, a smaller full-body figure leaning casually against the hood, silhouette detailed with reflective highlights. Background: sweeping art-deco linear motifs and abstract curves radiating from behind the portrait, screen-printed texture, subtle halftone grain and ink splatter accents. Mood: neo-noir synthwave, moody, retro-futuristic, dramatic lighting, limited three-color palette (magenta, gold/olive, black) with high contrast. Design notes: poster aspect ratio, high-resolution, ample negative space for bold title at bottom in angular script, small production-type blocks and rating strip beneath, intended for giclée or screen print with spot gloss on jacket highlights."
+  },
+  {
+    "id": 4,
+    "title": "God Father",
+    "category": "poster",
+    "imageUrl": "images/poster/god-father.webp",
+    "tool": "ChatGPT",
+    "tags": [
+      "Movie"
+    ],
+    "prompt": "**IMPORTANT:** Use the attached image as the **only facial reference**. Preserve the exact face, facial structure, eyes, nose, lips, skin tone, hairstyle, age, and expression from the attached photo. **Do not generate a new face, do not replace the identity, and do not alter facial features.** Only change the clothing, pose, lighting, and background. Create a cinematic 1970s vintage mafia movie poster featuring the subject as a powerful elderly mafia don wearing a black tuxedo, white shirt, black bow tie, and a red rose boutonniere. Add naturally aged silver hair and a thin mustache while keeping the original facial identity intact. Close-up three-quarter portrait in the upper half of the poster, seated in deep shadow with his right hand raised near his face in a calm, authoritative gesture. Dramatic film-noir chiaroscuro lighting with warm Venetian-blind backlight, subtle rim light, and soft atmospheric haze. Warm sepia, amber, gold, and deep black color palette with an authentic 1970s film look. Add a large distressed retro serif movie title in cream/gold in the lower third, a puppet-master marionette hand icon above the title, and small classic production credits at the bottom. Ultra-photorealistic, cinematic composition, subtle film grain, vintage paper texture, soft vignette, distressed print finish, poster-quality, 8K."
   }
 ]

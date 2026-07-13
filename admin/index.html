@@ -1,232 +1,391 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>AI Prompt Book — Admin</title>
-<style>
-  :root { --bg:#12141a; --card:#1c1f28; --line:#2c3040; --txt:#e8eaf0; --dim:#9aa0b0; --acc:#6c8cff; --ok:#3ecf8e; --bad:#ff6b6b; }
-  * { box-sizing:border-box; margin:0; }
-  body { background:var(--bg); color:var(--txt); font:14px/1.5 system-ui,sans-serif; padding:20px; }
-  h1 { font-size:18px; margin-bottom:4px; }
-  .dim { color:var(--dim); font-size:12px; }
-  .tabs { display:flex; gap:8px; margin:16px 0; flex-wrap:wrap; }
-  .tab { padding:6px 14px; border:1px solid var(--line); border-radius:20px; cursor:pointer; background:var(--card); }
-  .tab.on { background:var(--acc); border-color:var(--acc); color:#fff; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; }
-  .card img { width:100%; aspect-ratio:2/3; object-fit:cover; display:block; background:#000; }
-  .card .body { padding:10px; }
-  .card b { display:block; margin-bottom:2px; }
-  .card .actions { display:flex; gap:6px; margin-top:8px; }
-  button { padding:6px 12px; border:0; border-radius:6px; cursor:pointer; font:inherit; background:var(--line); color:var(--txt); }
-  button.primary { background:var(--acc); color:#fff; }
-  button.danger { background:transparent; color:var(--bad); border:1px solid var(--bad); }
-  button.publish { background:var(--ok); color:#08130d; font-weight:600; }
-  .bar { display:flex; gap:10px; align-items:center; margin-bottom:16px; flex-wrap:wrap; }
-  dialog { background:var(--card); color:var(--txt); border:1px solid var(--line); border-radius:12px; padding:20px; width:min(520px,90vw); }
-  dialog::backdrop { background:#000a; }
-  label { display:block; margin:10px 0 4px; font-size:12px; color:var(--dim); }
-  input, textarea, select { width:100%; padding:8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--txt); font:inherit; }
-  textarea { min-height:90px; }
-  #toast { position:fixed; bottom:20px; right:20px; background:var(--card); border:1px solid var(--line); padding:12px 16px; border-radius:8px; display:none; max-width:420px; white-space:pre-wrap; }
-</style>
+  <meta charset="utf-8">
+  <title>AI Prompt Book — Admin</title>
+  <style>
+    :root {
+      --bg: #12141a;
+      --card: #1c1f28;
+      --line: #2c3040;
+      --txt: #e8eaf0;
+      --dim: #9aa0b0;
+      --acc: #6c8cff;
+      --ok: #3ecf8e;
+      --bad: #ff6b6b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--txt);
+      font: 14px/1.5 system-ui, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .dim {
+      color: var(--dim);
+      font-size: 12px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin: 16px 0;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      cursor: pointer;
+      background: var(--card);
+    }
+
+    .tab.on {
+      background: var(--acc);
+      border-color: var(--acc);
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+
+    .card .body {
+      padding: 10px;
+    }
+
+    .card b {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .card .actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font: inherit;
+      background: var(--line);
+      color: var(--txt);
+    }
+
+    button.primary {
+      background: var(--acc);
+      color: #fff;
+    }
+
+    button.danger {
+      background: transparent;
+      color: var(--bad);
+      border: 1px solid var(--bad);
+    }
+
+    button.publish {
+      background: var(--ok);
+      color: #08130d;
+      font-weight: 600;
+    }
+
+    .bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    dialog {
+      background: var(--card);
+      color: var(--txt);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      width: min(520px, 90vw);
+    }
+
+    dialog::backdrop {
+      background: #000a;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 4px;
+      font-size: 12px;
+      color: var(--dim);
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--txt);
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 90px;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 12px 16px;
+      border-radius: 8px;
+      display: none;
+      max-width: 420px;
+      white-space: pre-wrap;
+    }
+  </style>
 </head>
+
 <body>
-<h1>AI Prompt Book — Content Admin</h1>
-<div class="dim" id="meta"></div>
-<div class="bar">
-  <button class="primary" onclick="openPrompt()">+ Add prompt</button>
-  <button onclick="openCategory()">+ Add category</button>
-  <button onclick="openEditCategory()">✎ Edit category</button>
-  <button class="publish" onclick="publish()">🚀 Publish (validate + push)</button>
-  <span class="dim" id="git"></span>
-</div>
-<div class="tabs" id="tabs"></div>
-<div class="grid" id="grid"></div>
+  <h1>AI Prompt Book — Content Admin</h1>
+  <div class="dim" id="meta"></div>
+  <div class="bar">
+    <button class="primary" onclick="openPrompt()">+ Add prompt</button>
+    <button onclick="openCategory()">+ Add category</button>
+    <button onclick="openEditCategory()">✎ Edit category</button>
+    <button class="publish" onclick="publish()">🚀 Publish (validate + push)</button>
+    <span class="dim" id="git"></span>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
 
-<dialog id="dlg">
-  <h3 id="dlgTitle">Add prompt</h3>
-  <form method="dialog" onsubmit="return savePrompt(event)">
-    <label>Category</label><select id="fCat"></select>
-    <label>Title</label><input id="fTitle" required>
-    <label>Tool</label>
-    <select id="fTool"><option>Midjourney</option><option>DALL-E</option><option>Stable Diffusion</option><option>Leonardo AI</option><option>Firefly</option><option>Gemini</option></select>
-    <label>Tags (comma separated)</label><input id="fTags" required>
-    <label>Prompt text</label><textarea id="fPrompt" required></textarea>
-    <label>Image <span id="imgHint" class="dim"></span></label><input id="fImg" type="file" accept="image/*">
-    <div style="margin-top:14px; display:flex; gap:8px; justify-content:flex-end">
-      <button type="button" onclick="dlg.close()">Cancel</button>
-      <button class="primary">Save</button>
-    </div>
-  </form>
-</dialog>
-
-<dialog id="dlgCat">
-  <h3>Add category</h3>
-  <form method="dialog" onsubmit="return saveCategory(event)">
-    <label>Name</label><input id="cName" required>
-    <label>Cover image</label><input id="cImg" type="file" accept="image/*" required>
-    <div style="margin-top:14px; display:flex; gap:8px; justify-content:flex-end">
-      <button type="button" onclick="dlgCat.close()">Cancel</button>
-      <button class="primary">Create</button>
-    </div>
-  </form>
-</dialog>
-
-<dialog id="dlgEditCat">
-  <h3 id="ecTitle">Edit category</h3>
-  <form method="dialog" onsubmit="return saveEditCategory(event)">
-    <label>Name (slug stays fixed)</label><input id="ecName" required>
-    <label>Cover image <span class="dim">(leave empty to keep current)</span></label>
-    <input id="ecImg" type="file" accept="image/*">
-    <div style="margin-top:14px; display:flex; gap:8px; justify-content:space-between">
-      <button type="button" class="danger" onclick="deleteCategory()">Delete category</button>
-      <span style="display:flex; gap:8px">
-        <button type="button" onclick="dlgEditCat.close()">Cancel</button>
+  <dialog id="dlg">
+    <h3 id="dlgTitle">Add prompt</h3>
+    <form method="dialog" onsubmit="return savePrompt(event)">
+      <label>Category</label><select id="fCat"></select>
+      <label>Title</label><input id="fTitle" required>
+      <label>Tool</label>
+      <select id="fTool">
+        <option>Midjourney</option>
+        <option>DALL-E</option>
+        <option>Stable Diffusion</option>
+        <option>Leonardo AI</option>
+        <option>Firefly</option>
+        <option>Gemini</option>
+        <option>ChatGPT</option>
+      </select>
+      <label>Tags (comma separated)</label><input id="fTags" required>
+      <label>Prompt text</label><textarea id="fPrompt" required></textarea>
+      <label>Image <span id="imgHint" class="dim"></span></label><input id="fImg" type="file" accept="image/*">
+      <div style="margin-top:14px; display:flex; gap:8px; justify-content:flex-end">
+        <button type="button" onclick="dlg.close()">Cancel</button>
         <button class="primary">Save</button>
-      </span>
-    </div>
-  </form>
-</dialog>
+      </div>
+    </form>
+  </dialog>
 
-<div id="toast"></div>
-<script>
-let DATA = null, current = null, editing = null;
+  <dialog id="dlgCat">
+    <h3>Add category</h3>
+    <form method="dialog" onsubmit="return saveCategory(event)">
+      <label>Name</label><input id="cName" required>
+      <label>Cover image</label><input id="cImg" type="file" accept="image/*" required>
+      <div style="margin-top:14px; display:flex; gap:8px; justify-content:flex-end">
+        <button type="button" onclick="dlgCat.close()">Cancel</button>
+        <button class="primary">Create</button>
+      </div>
+    </form>
+  </dialog>
 
-async function api(path, body) {
-  const r = await fetch(path, body ? {method:'POST', body: JSON.stringify(body)} : {});
-  const j = await r.json();
-  if (j.error) throw new Error(j.error);
-  return j;
-}
-function toast(msg, ms=4000) {
-  const t = document.getElementById('toast');
-  t.textContent = msg; t.style.display = 'block';
-  clearTimeout(t._h); t._h = setTimeout(() => t.style.display='none', ms);
-}
-async function load() {
-  DATA = await api('/api/content');
-  if (!current) current = DATA.categories[0]?.slug;
-  document.getElementById('meta').textContent =
-    `contentVersion ${DATA.version.contentVersion} · ${DATA.version.totalPrompts} prompts · updated ${DATA.version.lastUpdated}`;
-  document.getElementById('git').textContent = DATA.gitStatus ? '● unpublished changes' : '✓ everything published';
-  document.getElementById('tabs').innerHTML = DATA.categories.map(c =>
-    `<div class="tab ${c.slug===current?'on':''}" onclick="current='${c.slug}';render()">${c.name} (${c.promptCount})</div>`).join('');
-  render();
-}
-function render() {
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.textContent.startsWith(DATA.categories.find(c=>c.slug===current)?.name)));
-  document.getElementById('grid').innerHTML = (DATA.prompts[current]||[]).map(p => `
+  <dialog id="dlgEditCat">
+    <h3 id="ecTitle">Edit category</h3>
+    <form method="dialog" onsubmit="return saveEditCategory(event)">
+      <label>Name (slug stays fixed)</label><input id="ecName" required>
+      <label>Cover image <span class="dim">(leave empty to keep current)</span></label>
+      <input id="ecImg" type="file" accept="image/*">
+      <div style="margin-top:14px; display:flex; gap:8px; justify-content:space-between">
+        <button type="button" class="danger" onclick="deleteCategory()">Delete category</button>
+        <span style="display:flex; gap:8px">
+          <button type="button" onclick="dlgEditCat.close()">Cancel</button>
+          <button class="primary">Save</button>
+        </span>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast"></div>
+  <script>
+    let DATA = null, current = null, editing = null;
+
+    async function api(path, body) {
+      const r = await fetch(path, body ? { method: 'POST', body: JSON.stringify(body) } : {});
+      const j = await r.json();
+      if (j.error) throw new Error(j.error);
+      return j;
+    }
+    function toast(msg, ms = 4000) {
+      const t = document.getElementById('toast');
+      t.textContent = msg; t.style.display = 'block';
+      clearTimeout(t._h); t._h = setTimeout(() => t.style.display = 'none', ms);
+    }
+    async function load() {
+      DATA = await api('/api/content');
+      if (!current) current = DATA.categories[0]?.slug;
+      document.getElementById('meta').textContent =
+        `contentVersion ${DATA.version.contentVersion} · ${DATA.version.totalPrompts} prompts · updated ${DATA.version.lastUpdated}`;
+      document.getElementById('git').textContent = DATA.gitStatus ? '● unpublished changes' : '✓ everything published';
+      document.getElementById('tabs').innerHTML = DATA.categories.map(c =>
+        `<div class="tab ${c.slug === current ? 'on' : ''}" onclick="current='${c.slug}';render()">${c.name} (${c.promptCount})</div>`).join('');
+      render();
+    }
+    function render() {
+      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.textContent.startsWith(DATA.categories.find(c => c.slug === current)?.name)));
+      document.getElementById('grid').innerHTML = (DATA.prompts[current] || []).map(p => `
     <div class="card">
       <img src="/${p.imageUrl}" loading="lazy" onerror="this.style.opacity=.2">
       <div class="body">
         <b>${p.title}</b>
         <span class="dim">#${p.id} · ${p.tool} · ${p.tags.join(', ')}</span>
         <div class="actions">
-          <button onclick='openPrompt(${JSON.stringify(p).replace(/'/g,"&#39;")})'>Edit</button>
-          <button class="danger" onclick="del('${p.category}',${p.id},'${p.title.replace(/'/g,"\\'")}')">Delete</button>
+          <button onclick='openPrompt(${JSON.stringify(p).replace(/'/g, "&#39;")})'>Edit</button>
+          <button class="danger" onclick="del('${p.category}',${p.id},'${p.title.replace(/'/g, "\\'")}')">Delete</button>
         </div>
       </div>
     </div>`).join('') || '<p class="dim">No prompts in this category yet.</p>';
-}
-function openPrompt(p) {
-  editing = p || null;
-  document.getElementById('dlgTitle').textContent = p ? `Edit #${p.id}: ${p.title}` : 'Add prompt';
-  document.getElementById('fCat').innerHTML = DATA.categories.map(c =>
-    `<option value="${c.slug}" ${ (p?p.category:current)===c.slug?'selected':''}>${c.name}</option>`).join('');
-  document.getElementById('fCat').disabled = !!p;
-  document.getElementById('fTitle').value = p?.title || '';
-  document.getElementById('fTool').value = p?.tool || 'Midjourney';
-  document.getElementById('fTags').value = p?.tags.join(', ') || '';
-  document.getElementById('fPrompt').value = p?.prompt || '';
-  document.getElementById('fImg').value = '';
-  document.getElementById('fImg').required = !p;
-  document.getElementById('imgHint').textContent = p ? '(leave empty to keep current image)' : '(auto-converted to compressed WebP)';
-  dlg.showModal();
-}
-function openCategory() { dlgCat.showModal(); }
-function openEditCategory() {
-  const cat = DATA.categories.find(c => c.slug === current);
-  if (!cat) return toast('Select a category tab first');
-  document.getElementById('ecTitle').textContent = `Edit category: ${cat.slug}`;
-  document.getElementById('ecName').value = cat.name;
-  document.getElementById('ecImg').value = '';
-  dlgEditCat.showModal();
-}
-async function saveEditCategory(e) {
-  e.preventDefault();
-  try {
-    await api('/api/category/update', {
-      slug: current,
-      name: document.getElementById('ecName').value.trim(),
-      imageBase64: await fileToB64(document.getElementById('ecImg')),
-    });
-    toast('Category updated ✓'); dlgEditCat.close(); load();
-  } catch (err) { toast('Error: ' + err.message); }
-  return false;
-}
-async function deleteCategory() {
-  const cat = DATA.categories.find(c => c.slug === current);
-  const n = (DATA.prompts[current] || []).length;
-  if (!confirm(`Delete category "${cat.name}" with ${n} prompt(s)?\nThis removes ${current}.json and all its images.`)) return;
-  try {
-    await api('/api/category/delete', {slug: current});
-    toast('Category deleted ✓'); dlgEditCat.close(); current = null; load();
-  } catch (err) { toast('Error: ' + err.message); }
-}
-function fileToB64(input) {
-  return new Promise((res) => {
-    if (!input.files[0]) return res(null);
-    const r = new FileReader();
-    r.onload = () => res(r.result);
-    r.readAsDataURL(input.files[0]);
-  });
-}
-async function savePrompt(e) {
-  e.preventDefault();
-  const body = {
-    category: document.getElementById('fCat').value,
-    title: document.getElementById('fTitle').value.trim(),
-    tool: document.getElementById('fTool').value,
-    tags: document.getElementById('fTags').value.split(',').map(s=>s.trim()).filter(Boolean),
-    prompt: document.getElementById('fPrompt').value.trim(),
-    imageBase64: await fileToB64(document.getElementById('fImg')),
-  };
-  try {
-    if (editing) { body.id = editing.id; await api('/api/prompt/update', body); toast('Updated ✓'); }
-    else { const r = await api('/api/prompt/add', body); toast(`Added #${r.id} (image ${r.imageKb} KB) ✓`); }
-    dlg.close(); load();
-  } catch (err) { toast('Error: ' + err.message); }
-  return false;
-}
-async function saveCategory(e) {
-  e.preventDefault();
-  try {
-    const r = await api('/api/category/add', {
-      name: document.getElementById('cName').value.trim(),
-      imageBase64: await fileToB64(document.getElementById('cImg')),
-    });
-    toast(`Category '${r.slug}' created ✓`); dlgCat.close(); current = r.slug; load();
-  } catch (err) { toast('Error: ' + err.message); }
-  return false;
-}
-async function del(cat, id, title) {
-  if (!confirm(`Delete "${title}" and its image?`)) return;
-  await api('/api/prompt/delete', {category: cat, id});
-  toast('Deleted ✓'); load();
-}
-async function publish() {
-  const msg = prompt('Commit message (optional):') ;
-  if (msg === null) return;
-  toast('Publishing…', 60000);
-  try {
-    const r = await api('/api/publish', {message: msg});
-    if (r.ok) toast(`Published v${r.version} ✓ — app will sync on next launch`);
-    else toast(`Publish failed at ${r.step}:\n${r.output}`, 15000);
+    }
+    function openPrompt(p) {
+      editing = p || null;
+      document.getElementById('dlgTitle').textContent = p ? `Edit #${p.id}: ${p.title}` : 'Add prompt';
+      document.getElementById('fCat').innerHTML = DATA.categories.map(c =>
+        `<option value="${c.slug}" ${(p ? p.category : current) === c.slug ? 'selected' : ''}>${c.name}</option>`).join('');
+      document.getElementById('fCat').disabled = !!p;
+      document.getElementById('fTitle').value = p?.title || '';
+      document.getElementById('fTool').value = p?.tool || 'Midjourney';
+      document.getElementById('fTags').value = p?.tags.join(', ') || '';
+      document.getElementById('fPrompt').value = p?.prompt || '';
+      document.getElementById('fImg').value = '';
+      document.getElementById('fImg').required = !p;
+      document.getElementById('imgHint').textContent = p ? '(leave empty to keep current image)' : '(auto-converted to compressed WebP)';
+      dlg.showModal();
+    }
+    function openCategory() { dlgCat.showModal(); }
+    function openEditCategory() {
+      const cat = DATA.categories.find(c => c.slug === current);
+      if (!cat) return toast('Select a category tab first');
+      document.getElementById('ecTitle').textContent = `Edit category: ${cat.slug}`;
+      document.getElementById('ecName').value = cat.name;
+      document.getElementById('ecImg').value = '';
+      dlgEditCat.showModal();
+    }
+    async function saveEditCategory(e) {
+      e.preventDefault();
+      try {
+        await api('/api/category/update', {
+          slug: current,
+          name: document.getElementById('ecName').value.trim(),
+          imageBase64: await fileToB64(document.getElementById('ecImg')),
+        });
+        toast('Category updated ✓'); dlgEditCat.close(); load();
+      } catch (err) { toast('Error: ' + err.message); }
+      return false;
+    }
+    async function deleteCategory() {
+      const cat = DATA.categories.find(c => c.slug === current);
+      const n = (DATA.prompts[current] || []).length;
+      if (!confirm(`Delete category "${cat.name}" with ${n} prompt(s)?\nThis removes ${current}.json and all its images.`)) return;
+      try {
+        await api('/api/category/delete', { slug: current });
+        toast('Category deleted ✓'); dlgEditCat.close(); current = null; load();
+      } catch (err) { toast('Error: ' + err.message); }
+    }
+    function fileToB64(input) {
+      return new Promise((res) => {
+        if (!input.files[0]) return res(null);
+        const r = new FileReader();
+        r.onload = () => res(r.result);
+        r.readAsDataURL(input.files[0]);
+      });
+    }
+    async function savePrompt(e) {
+      e.preventDefault();
+      const body = {
+        category: document.getElementById('fCat').value,
+        title: document.getElementById('fTitle').value.trim(),
+        tool: document.getElementById('fTool').value,
+        tags: document.getElementById('fTags').value.split(',').map(s => s.trim()).filter(Boolean),
+        prompt: document.getElementById('fPrompt').value.trim(),
+        imageBase64: await fileToB64(document.getElementById('fImg')),
+      };
+      try {
+        if (editing) { body.id = editing.id; await api('/api/prompt/update', body); toast('Updated ✓'); }
+        else { const r = await api('/api/prompt/add', body); toast(`Added #${r.id} (image ${r.imageKb} KB) ✓`); }
+        dlg.close(); load();
+      } catch (err) { toast('Error: ' + err.message); }
+      return false;
+    }
+    async function saveCategory(e) {
+      e.preventDefault();
+      try {
+        const r = await api('/api/category/add', {
+          name: document.getElementById('cName').value.trim(),
+          imageBase64: await fileToB64(document.getElementById('cImg')),
+        });
+        toast(`Category '${r.slug}' created ✓`); dlgCat.close(); current = r.slug; load();
+      } catch (err) { toast('Error: ' + err.message); }
+      return false;
+    }
+    async function del(cat, id, title) {
+      if (!confirm(`Delete "${title}" and its image?`)) return;
+      await api('/api/prompt/delete', { category: cat, id });
+      toast('Deleted ✓'); load();
+    }
+    async function publish() {
+      const msg = prompt('Commit message (optional):');
+      if (msg === null) return;
+      toast('Publishing…', 60000);
+      try {
+        const r = await api('/api/publish', { message: msg });
+        if (r.ok) toast(`Published v${r.version} ✓ — app will sync on next launch`);
+        else toast(`Publish failed at ${r.step}:\n${r.output}`, 15000);
+        load();
+      } catch (err) { toast('Error: ' + err.message); }
+    }
     load();
-  } catch (err) { toast('Error: ' + err.message); }
-}
-load();
-</script>
+  </script>
 </body>
+
 </html>
