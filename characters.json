@@ -75,5 +75,17 @@
       "poster"
     ],
     "prompt": "Ultra-cinematic, photorealistic 9:16 ultrawide low-angle shot of a confident young man standing in the same outdoor location, casually leaning against a tall, weathered concrete gate. He is dressed in a crisp white open-collar cargo shirt with rolled-up sleeves and black oversized baggy cargo pants, creating a modern streetwear aesthetic. Lush green branches naturally frame the scene, with aged barbed wire running along the top of the gate. The rain-soaked ground reflects soft ambient light, enhancing the fresh post-rain atmosphere. In the background, preserve the misty forest pathway, fading into dense fog for depth and mystery. Soft diffused overcast lighting, subtle drifting mist, cinematic depth of field, realistic wet textures, natural color grading, volumetric fog, premium editorial fashion photography, dramatic perspective, ultra-detailed skin and fabric textures, HDR, 8K, Sony A1, 50mm lens, f/1.8, shallow depth of field, moody, dreamy, atmospheric, highly realistic."
+  },
+  {
+    "id": 13,
+    "title": "Neon Contrast",
+    "category": "characters",
+    "imageUrl": "images/characters/neon-contrast.webp",
+    "tool": "Gemini",
+    "tags": [
+      "women",
+      "neon"
+    ],
+    "prompt": "A young woman sitting confidently on a wooden stool against a dark smoky background with red and blue lighting effects. She has long wavy hair styled to one side, wearing a white V-neck t-shirt, blue jeans, and a denim jacket draped casually over her arm. The lighting creates a cinematic contrast — red glow on one side and blue on the other — adding a dramatic, modern portrait vibe. The background features soft smoke blending with the lights for a moody, stylish atmosphere. Studio portrait photography, sharp focus, realistic skin tones, soft shadows, high-quality Gemini AI photo editing style. I want exact woman same face as, I uploaded no alteration 100% same. Ratio 9:16."
   }
 ]
