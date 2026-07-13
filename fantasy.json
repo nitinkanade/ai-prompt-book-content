@@ -24,45 +24,5 @@
       "guardian"
     ],
     "prompt": "A gentle forest guardian creature constructed from living ancient wood, vines, moss, and soft glowing wildflowers. Standing peacefully in a sun-dappled woodland clearing, looking down with kind glowing eyes, fantasy realism, incredibly rich and detailed botanical elements, ethereal fantasy illustration."
-  },
-  {
-    "id": 3,
-    "title": "Floating Library",
-    "category": "fantasy",
-    "imageUrl": "images/fantasy/floating-library.webp",
-    "tool": "DALL-E",
-    "tags": [
-      "fantasy",
-      "library",
-      "books"
-    ],
-    "prompt": "A magical floating library suspended high above a sea of clouds. Endless shelves filled with glowing, leather-bound books, ancient wooden spiral staircases winding into the sky, warm brass lanterns floating in mid-air, a calm and scholarly fantasy atmosphere, highly detailed oil painting style."
-  },
-  {
-    "id": 4,
-    "title": "Dragon Valley",
-    "category": "fantasy",
-    "imageUrl": "images/fantasy/dragon-valley.webp",
-    "tool": "Leonardo AI",
-    "tags": [
-      "fantasy",
-      "dragon",
-      "valley"
-    ],
-    "prompt": "A friendly, majestic green dragon resting peacefully in a wide valley filled with vibrant wildflowers. A crystal-clear river winding past, distant snow-capped mountains glowing under a warm sunrise sky, peaceful fantasy creature design, detailed scenic fantasy environment."
-  },
-  {
-    "id": 5,
-    "title": "Enchanted Doorway",
-    "category": "fantasy",
-    "imageUrl": "images/fantasy/enchanted-doorway.webp",
-    "tool": "Firefly",
-    "tags": [
-      "fantasy",
-      "doorway",
-      "magic"
-    ],
-    "prompt": "An ancient, moss-covered stone archway in the side of a tree-covered hill, serving as an enchanted doorway. Glowing magical glyphs carved into the stone, soft warm golden light spilling out from the doorway, surrounded by colorful flowers and climbing vines, inviting magical atmosphere, detailed fantasy illustration."
   }
 ]
-
