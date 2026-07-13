@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local admin panel for the AI Prompt Book CMS..
+"""Local admin panel for the AI Prompt Book CMS...
 
 Run:  python admin/serve.py   → opens http://localhost:8765
 Zero-cost: edits the JSON/images in this repo directly; the Publish
