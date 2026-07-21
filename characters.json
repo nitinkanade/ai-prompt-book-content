@@ -88,5 +88,19 @@
       "neon"
     ],
     "prompt": "A young woman sitting confidently on a wooden stool against a dark smoky background with red and blue lighting effects. She has long wavy hair styled to one side, wearing a white V-neck t-shirt, blue jeans, and a denim jacket draped casually over her arm. The lighting creates a cinematic contrast — red glow on one side and blue on the other — adding a dramatic, modern portrait vibe. The background features soft smoke blending with the lights for a moody, stylish atmosphere. Studio portrait photography, sharp focus, realistic skin tones, soft shadows, high-quality Gemini AI photo editing style. I want exact woman same face as, I uploaded no alteration 100% same. Ratio 9:16."
+  },
+  {
+    "id": 2,
+    "title": "Hyperdetailed Movie Poster",
+    "category": "characters",
+    "imageUrl": "images/poster/lord-of-war.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "hyperdetailed",
+      "movie",
+      "poster",
+      "centered"
+    ],
+    "prompt": "Hyper-detailed cinematic movie poster: centered close-up portrait of a middle-aged man's face constructed entirely from thousands of bullets, shells, casings and gun parts — rifle rounds form the hairline, clustered small cartridges create skin texture, spent casings and copper tips sculpt shadows and highlights, collar and suit built from stacked blackened bullets, tie assembled from brass shells. Piercing icy blue photorealistic eyes with reflective catchlights, neutral solemn expression, crisp jawline. Stark white minimalist background with a thin barcode-like border, bold large elegant serif title at the top reading \"LORD OF WAR\" and a small tagline beneath: \"Where there's a will, there's a weapon.\" Studio lighting, high contrast, dramatic rim light, extreme macro texture detail, photoreal collage, 300 dpi poster ratio vertical, subtle film grain and soft vignette for cinematic mood."
   }
 ]
