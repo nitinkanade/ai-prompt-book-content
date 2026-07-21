@@ -1,14 +1,15 @@
 [
   {
     "id": 7,
-    "title": "Cinematic Action Hero",
+    "title": "Gritty Poster Black",
     "category": "characters",
     "imageUrl": "images/characters/cinematic-action-hero.webp",
     "tool": "Midjourney",
     "tags": [
-      "character",
-      "cinematic",
-      "poster"
+      "gritty",
+      "poster",
+      "black",
+      "background"
     ],
     "prompt": "Gritty cinematic poster, black background with red grunge texture and film grain. Double exposure composition: Large close-up of a South Indian man's intense face and eye on left, monochrome with red rim lighting. Overlaid on right: full body of same bearded man in rolled-sleeve shirt and pants, holding a combat knife, looking back over shoulder. Dramatic red backlighting outlining hair and clothes. Large vertical red stylized text behind the figure with cracked texture."
   },
