@@ -24,5 +24,17 @@
       "guardian"
     ],
     "prompt": "A gentle forest guardian creature constructed from living ancient wood, vines, moss, and soft glowing wildflowers. Standing peacefully in a sun-dappled woodland clearing, looking down with kind glowing eyes, fantasy realism, incredibly rich and detailed botanical elements, ethereal fantasy illustration."
+  },
+  {
+    "id": 3,
+    "title": "Miniature Self Portrait",
+    "category": "fantasy",
+    "imageUrl": "images/fantasy/miniature-self-portrait.webp",
+    "tool": "ChatGPT",
+    "tags": [
+      "Miniature",
+      "Self Portrait"
+    ],
+    "prompt": "IMPORTANT: Use the uploaded image as the ONLY identity reference. Preserve the exact face, facial structure, skin tone, beard, hairstyle, glasses, age, body proportions, expression, and identity from the uploaded photo. Do not beautify, feminize, or replace the face. The subject must remain instantly recognizable.\n\nCreate an ultra-realistic surreal cinematic studio portrait of the same person sitting cross-legged on a seamless studio floor with a soft sky-blue gradient background.\n\nChange only the outfit to an oversized mustard yellow hoodie, relaxed gray jeans, and mustard-and-white canvas sneakers while keeping the body shape and proportions consistent with the reference image.\n\nThe subject smiles gently while looking at a tiny miniature version of himself (8–12 cm tall) standing confidently on his open palm.\n\nAround him, create 10–12 unique miniature versions of the same person, each with the exact same face, hairstyle, glasses, beard, clothing, and identity, naturally interacting in different positions:\n\nSitting on both shoes\nClimbing the hoodie sleeve\nWalking across the jeans\nWaving from the shoulder\nReading a tiny book\nTaking a selfie\nDancing\nChatting together\nLeaning against the sneaker\nSitting on the knee\nLooking up at the giant version\nPointing toward the miniature on the palm\n\nEvery miniature must have a different pose and natural body language—no duplicated poses or cloned appearance.\n\nUse true-to-scale proportions, realistic contact shadows beneath every miniature, physically accurate perspective, and believable interactions with clothing folds.\n\nStyle: Luxury editorial fashion photography, surreal storytelling, hyper-realistic skin texture, ultra-detailed fabric weave, HDR, cinematic color grading, shallow depth of field, premium advertising campaign, volumetric soft lighting, subtle rim light, global illumination, realistic reflections on glasses, 85mm DSLR lens, f/1.8, 8K RAW, masterpiece, award-winning commercial photography.\n\nNegative Prompt: Different face, identity change, beautified face, missing glasses, feminine features, duplicate miniatures, repeated poses, extra limbs, bad hands, extra fingers, distorted anatomy, incorrect scale, floating objects, blurry face, plastic skin, CGI, cartoon, illustration, low resolution, noise, artifacts, watermark, logo, text."
   }
 ]

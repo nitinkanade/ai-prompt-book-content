@@ -32,13 +32,13 @@
     "name": "Anime",
     "slug": "anime",
     "image": "images/anime/cover.webp",
-    "promptCount": 5
+    "promptCount": 6
   },
   {
     "id": 3,
     "name": "Fantasy",
     "slug": "fantasy",
     "image": "images/fantasy/cover.webp",
-    "promptCount": 2
+    "promptCount": 3
   }
 ]
