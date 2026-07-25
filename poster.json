@@ -46,5 +46,19 @@
       "grampic"
     ],
     "prompt": "Use the uploaded image as the ONLY identity reference. Keep the subject's gender, face, facial structure, hairstyle, skin tone, age, clothing, body proportions, original pose, expression, hand position, camera angle, framing and perspective exactly unchanged. Create a premium Instagram Feed Post (1080x1350, 4:5) with a thin white sticker outline and soft white glow. Add one tiny compact emoji crown (10-12 emojis♡) centered in a very tight curved arc, floating just above the hair with a clear small gap, about 15-20 px above the highest point of the hair, matching the reference. Keep the emojis small, closely packed, subtle, and never touching or overlapping the hair, forehead, face, or white outline. Never make the crown wide, oversized or scattered. Use the same clothing, hairstyle and pose. Background heavily blurred dark-mode mobile music streaming app playlist with a premium cinematic look."
+  },
+  {
+    "id": 2,
+    "title": "Hyperdetailed Movie Poster",
+    "category": "poster",
+    "imageUrl": "images/poster/lord-of-war.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "hyperdetailed",
+      "movie",
+      "poster",
+      "centered"
+    ],
+    "prompt": "Hyper-detailed cinematic movie poster: centered close-up portrait of a middle-aged man's face constructed entirely from thousands of bullets, shells, casings and gun parts — rifle rounds form the hairline, clustered small cartridges create skin texture, spent casings and copper tips sculpt shadows and highlights, collar and suit built from stacked blackened bullets, tie assembled from brass shells. Piercing icy blue photorealistic eyes with reflective catchlights, neutral solemn expression, crisp jawline. Stark white minimalist background with a thin barcode-like border, bold large elegant serif title at the top reading \"LORD OF WAR\" and a small tagline beneath: \"Where there's a will, there's a weapon.\" Studio lighting, high contrast, dramatic rim light, extreme macro texture detail, photoreal collage, 300 dpi poster ratio vertical, subtle film grain and soft vignette for cinematic mood."
   }
 ]
