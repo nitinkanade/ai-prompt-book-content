@@ -63,5 +63,19 @@
       "stars"
     ],
     "prompt": "Wholesome original anime illustration of a group of friends stargazing together on a lush grassy hill. A telescope set up nearby, a vast clear night sky filled with the Milky Way galaxy and soft glowing shooting stars, cinematic deep-blue color palette, detailed landscape, emotional and friendly atmosphere."
+  },
+  {
+    "id": 6,
+    "title": "Freak's Reach: A Flyover In Blue",
+    "category": "anime",
+    "imageUrl": "images/anime/freak-s-reach-a-flyover-in-blue.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "freaks",
+      "butterfly",
+      "lake",
+      "landscape"
+    ],
+    "prompt": "Background change only for. Keep the subject 100% unchanged some face, hairstyle, skin tone pose, body proportions, clothing, angle, frooming lighting and expressions.I n this, a person is sitting freakstically on the foremost stone at the edge of the ravine, add several elegant blue 3D 4 butterflys and birds flying at different depths with soft motion and natural lighting that blends perfectly with the scene. Apply strong yot natural 85mm DSLR lens background blue (abokash).\n\nKeeping thes subbject perfectly sharo while the tree, leaves, lake, and distant scenery blend into os"
   }
 ]
