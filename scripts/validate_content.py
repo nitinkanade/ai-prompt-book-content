@@ -92,6 +92,12 @@ def main():
             seen_ids.add(pid)
             if p.get("category") != slug:
                 err(f"{ctx}: category={p.get('category')!r} does not match slug {slug!r}")
+            if "createdAt" in p and p["createdAt"]:
+                try:
+                    from datetime import datetime
+                    datetime.fromisoformat(str(p["createdAt"]).replace("Z", "+00:00"))
+                except Exception:
+                    err(f"{ctx}: invalid createdAt timestamp format {p['createdAt']!r}")
             if "imageUrl" in p:
                 check_image(p["imageUrl"], ctx)
 
