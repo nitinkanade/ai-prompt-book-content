@@ -124,5 +124,20 @@
       "female"
     ],
     "prompt": "IMPORTANT: Use the uploaded image as the only identity reference. Preserve the exact face, facial structure, hairstyle, skin tone, expression, body proportions, and identity. Do not alter or beautify the face.\n\nCreate an ultra-realistic cinematic luxury portrait of the subject in a bold monochrome red studio.\n\nAppearance\nElegant, confident, mysterious expression\nSharp eye contact\nNatural skin texture with subtle luxury makeup\nSoft glossy red lips\nDark hair partially hidden beneath the hat with a few loose strands\nOutfit\nOversized wide-brim designer red hat\nBlack high-neck cashmere turtleneck\nPremium minimalist luxury fashion\nRich fabric texture\nPose\nClose-up portrait\nFace slightly off-center\nDirect eye contact\nHat creating a bold, elegant silhouette\nBackground\nDeep monochrome red seamless studio\nSoft gradients with cinematic shadows\nClean, minimal luxury atmosphere\nLighting\nDramatic side lighting\nSoft highlights on the face\nNatural shadows from the hat brim\nWarm skin glow with high-end beauty photography lighting\nStyle\n\nLuxury fashion campaign, Vogue, premium perfume advertisement, Hollywood editorial photography, minimalist studio portrait, ultra-realistic skin and fabric textures, HDR, shallow depth of field, 85mm lens, f/1.8, 8K RAW, masterpiece quality.\n\nMood\n\nConfident • Mysterious • Elegant • Powerful • Sophisticated • Timeless\n\nColor Palette\n\nDeep red, black, soft natural skin tones, and subtle warm highlights.\n\nNegative Prompt: Different face, identity change, distorted anatomy, duplicate people, bad hands, blurry details, plastic skin, CGI, cartoon, low quality, noise, watermark, logo, text, artificial face.\n\nAspect Ratio: 4:5"
+  },
+  {
+    "id": 17,
+    "title": "Realistic Fullbody Stylish",
+    "category": "characters",
+    "imageUrl": "images/characters/realistic-fullbody-stylish.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "realistic",
+      "fullbody",
+      "stylish",
+      "young",
+      "male"
+    ],
+    "prompt": "Ultra realistic full-body A stylish young man walking confidently down the center of an empty road, hands in pockets, wearing a yellow-to-white gradient linen shirt, light blue cargo joggers, white denim sneakers, and pink-tinted sunglasses. Behind him is an enormous close-up portrait of himself looking back over his shoulder with a soft smile, dramatic double exposure composition. cinematic fog, smooth skin, messy styled hair with a shaved line on the side, where only the foreground subject"
   }
 ]
