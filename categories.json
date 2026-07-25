@@ -4,14 +4,14 @@
     "name": "Characters",
     "slug": "characters",
     "image": "images/characters/cover.webp",
-    "promptCount": 8
+    "promptCount": 10
   },
   {
     "id": 7,
     "name": "Poster",
     "slug": "poster",
     "image": "images/poster/cover.webp",
-    "promptCount": 5
+    "promptCount": 4
   },
   {
     "id": 6,
@@ -39,6 +39,6 @@
     "name": "Fantasy",
     "slug": "fantasy",
     "image": "images/fantasy/cover.webp",
-    "promptCount": 3
+    "promptCount": 4
   }
 ]

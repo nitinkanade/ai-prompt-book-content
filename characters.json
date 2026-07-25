@@ -102,5 +102,27 @@
       "young"
     ],
     "prompt": "Ultra realistic full-body A stylish young man walking confidently down the center of an empty road, hands in pockets, wearing a yellow-to-white gradient linen shirt, light blue cargo joggers, white denim sneakers, and pink-tinted sunglasses. Behind him is an enormous close-up portrait of himself looking back over his shoulder with a soft smile, dramatic double exposure composition. cinematic fog, smooth skin, messy styled hair with a shaved line on the side, where only the foreground subject"
+  },
+  {
+    "id": 15,
+    "title": "THE BLACK ICON",
+    "category": "characters",
+    "imageUrl": "images/characters/the-black-icon.webp",
+    "tool": "Gemini",
+    "tags": [
+      "male"
+    ],
+    "prompt": "THE BLACK ICON — Luxury Cinematic Fashion Portrait\n\nIMPORTANT: Use the uploaded image as the only identity reference. Preserve the exact face, facial structure, hairstyle, beard, skin tone, expression, body proportions, and identity. Do not alter or beautify the face.\n\nCreate an ultra-realistic cinematic luxury portrait of the subject in a premium dark studio.\n\nAppearance\nStrong masculine features with a defined jawline\nCalm, confident, mysterious expression\nSharp eye contact\nNatural skin texture with detailed beard and hair\nOutfit\nBlack tailored wool overcoat\nBlack turtleneck sweater\nElegant silver luxury watch\nMinimal premium accessories\nTimeless European \"quiet luxury\" fashion\nPose\nUpper-body portrait\nSlightly turned toward the camera\nOne hand adjusting the coat collar\nConfident editorial stance\nBackground\nDeep black studio with soft charcoal gradients\nCinematic shadows and subtle smoke\nMinimal luxury architecture\nFaint city lights and reflective surfaces\nLighting\nDramatic side lighting\nSoft rim light around the shoulders\nRich contrast with subtle warm highlights\nPremium luxury fragrance advertisement lighting\nStyle\n\nLuxury fashion campaign, Vogue Homme, Hollywood cinematic poster, premium editorial photography, ultra-realistic skin and fabric textures, visible stitching, HDR, shallow depth of field, 85mm lens, f/1.8, 8K RAW, masterpiece quality.\n\nMood\n\nPowerful • Elegant • Mysterious • Sophisticated • Wealthy • Confident\n\nColor Palette\n\nBlack, charcoal grey, silver, and subtle gold accents.\n\nNegative Prompt: Different face, identity change, duplicate people, distorted anatomy, bad hands, extra fingers, blurry details, plastic skin, CGI, cartoon, low quality, noise, watermark, logo, text.\n\nAspect Ratio: 4:5\n\nAlternative: MIDNIGHT EXECUTIVE\n\nCreate an ultra-realistic cinematic portrait of the same subject standing beside a luxury black sedan outside a modern skyscraper at night.\n\nPerfectly tailored charcoal suit\nBlack silk open-collar shirt\nLuxury watch and sunglasses\nRain-soaked street with reflections\nNeon-lit skyline and cinematic atmosphere\nConfident CEO posture\n\nStyle: James Bond × Quiet Luxury × Billionaire Aesthetic × Hollywood Night Photography, 85mm lens, HDR, 8K photorealistic."
+  },
+  {
+    "id": 16,
+    "title": "Luxury Minimalist Fashion Portrait",
+    "category": "characters",
+    "imageUrl": "images/characters/luxury-minimalist-fashion-portrait.webp",
+    "tool": "Gemini",
+    "tags": [
+      "female"
+    ],
+    "prompt": "IMPORTANT: Use the uploaded image as the only identity reference. Preserve the exact face, facial structure, hairstyle, skin tone, expression, body proportions, and identity. Do not alter or beautify the face.\n\nCreate an ultra-realistic cinematic luxury portrait of the subject in a bold monochrome red studio.\n\nAppearance\nElegant, confident, mysterious expression\nSharp eye contact\nNatural skin texture with subtle luxury makeup\nSoft glossy red lips\nDark hair partially hidden beneath the hat with a few loose strands\nOutfit\nOversized wide-brim designer red hat\nBlack high-neck cashmere turtleneck\nPremium minimalist luxury fashion\nRich fabric texture\nPose\nClose-up portrait\nFace slightly off-center\nDirect eye contact\nHat creating a bold, elegant silhouette\nBackground\nDeep monochrome red seamless studio\nSoft gradients with cinematic shadows\nClean, minimal luxury atmosphere\nLighting\nDramatic side lighting\nSoft highlights on the face\nNatural shadows from the hat brim\nWarm skin glow with high-end beauty photography lighting\nStyle\n\nLuxury fashion campaign, Vogue, premium perfume advertisement, Hollywood editorial photography, minimalist studio portrait, ultra-realistic skin and fabric textures, HDR, shallow depth of field, 85mm lens, f/1.8, 8K RAW, masterpiece quality.\n\nMood\n\nConfident • Mysterious • Elegant • Powerful • Sophisticated • Timeless\n\nColor Palette\n\nDeep red, black, soft natural skin tones, and subtle warm highlights.\n\nNegative Prompt: Different face, identity change, distorted anatomy, duplicate people, bad hands, blurry details, plastic skin, CGI, cartoon, low quality, noise, watermark, logo, text, artificial face.\n\nAspect Ratio: 4:5"
   }
 ]

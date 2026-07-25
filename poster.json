@@ -34,20 +34,6 @@
     "prompt": "**IMPORTANT:** Use the attached image as the **only facial reference**. Preserve the exact face, facial structure, eyes, nose, lips, skin tone, hairstyle, age, and expression from the attached photo. **Do not generate a new face, do not replace the identity, and do not alter facial features.** Only change the clothing, pose, lighting, and background. Create a cinematic 1970s vintage mafia movie poster featuring the subject as a powerful elderly mafia don wearing a black tuxedo, white shirt, black bow tie, and a red rose boutonniere. Add naturally aged silver hair and a thin mustache while keeping the original facial identity intact. Close-up three-quarter portrait in the upper half of the poster, seated in deep shadow with his right hand raised near his face in a calm, authoritative gesture. Dramatic film-noir chiaroscuro lighting with warm Venetian-blind backlight, subtle rim light, and soft atmospheric haze. Warm sepia, amber, gold, and deep black color palette with an authentic 1970s film look. Add a large distressed retro serif movie title in cream/gold in the lower third, a puppet-master marionette hand icon above the title, and small classic production credits at the bottom. Ultra-photorealistic, cinematic composition, subtle film grain, vintage paper texture, soft vignette, distressed print finish, poster-quality, 8K."
   },
   {
-    "id": 5,
-    "title": "The Perfect Instagram Feed Portrait",
-    "category": "poster",
-    "imageUrl": "images/poster/the-perfect-instagram-feed-portrait.webp",
-    "tool": "Midjourney",
-    "tags": [
-      "idref",
-      "post",
-      "logo",
-      "grampic"
-    ],
-    "prompt": "Use the uploaded image as the ONLY identity reference. Keep the subject's gender, face, facial structure, hairstyle, skin tone, age, clothing, body proportions, original pose, expression, hand position, camera angle, framing and perspective exactly unchanged. Create a premium Instagram Feed Post (1080x1350, 4:5) with a thin white sticker outline and soft white glow. Add one tiny compact emoji crown (10-12 emojis♡) centered in a very tight curved arc, floating just above the hair with a clear small gap, about 15-20 px above the highest point of the hair, matching the reference. Keep the emojis small, closely packed, subtle, and never touching or overlapping the hair, forehead, face, or white outline. Never make the crown wide, oversized or scattered. Use the same clothing, hairstyle and pose. Background heavily blurred dark-mode mobile music streaming app playlist with a premium cinematic look."
-  },
-  {
     "id": 2,
     "title": "Hyperdetailed Movie Poster",
     "category": "poster",
