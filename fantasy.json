@@ -47,5 +47,20 @@
       "female"
     ],
     "prompt": "FREEDOM BLOOM — Artistic Nature Portrait\n\nIMPORTANT: Use the uploaded image as the only identity reference. Preserve the exact face, facial structure, hairstyle, skin tone, expression, body proportions, and identity. Do not alter or beautify the face.\n\nCreate an ultra-realistic fine-art portrait of the subject walking confidently through a dreamy, nature-inspired landscape that blends fashion photography, watercolor painting, and surreal storytelling.\n\nAppearance\nCalm, peaceful expression with eyes gently closed\nFace slightly lifted toward the sky\nHair flowing naturally in the wind\nRealistic skin and facial details\nOutfit\nMustard yellow textured blouse\nOversized faded blue denim coat\nLoose beige cargo pants\nVintage brown leather boots\nFlowing clothing with natural movement\nPose\nWalking forward with confidence\nRelaxed posture\nGraceful motion that feels free, strong, and connected to nature\nEnvironment\nArtistic wild grass and dried flowers\nFloating leaves and soft botanical elements\nWhite doves flying around the subject\nDreamy branches and painterly nature textures\nGentle wind moving the hair and clothing\nBackground\nLarge glowing orange sun behind the subject\nWarm beige textured paper backdrop\nWatercolor washes, hand-painted brush strokes\nSubtle geometric shapes and organic nature patterns\nLighting\nWarm golden sunlight\nSoft backlight around the silhouette\nGentle shadows and glowing atmosphere\nStyle\n\nFine-art fashion editorial, watercolor surrealism, contemporary gallery artwork, cinematic portrait photography, painterly edges, realistic face and clothing, layered brush strokes, paper grain texture, HDR, 85mm lens, 8K masterpiece quality.\n\nMood\n\nFree • Hopeful • Peaceful • Artistic • Adventurous • Inspirational\n\nColor Palette\n\nBurnt orange, warm beige, muted blue, golden yellow, soft grey, and natural earth tones.\n\nNegative Prompt: Different face, identity change, duplicate people, distorted anatomy, bad hands, extra fingers, blurry details, plastic skin, CGI, cartoon, messy composition, low quality, noise, watermark, logo, text."
+  },
+  {
+    "id": 5,
+    "title": "1980s Face",
+    "category": "fantasy",
+    "imageUrl": "images/fantasy/1980s-face.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "1980s",
+      "photorealistic",
+      "historically believable",
+      "natural"
+    ],
+    "prompt": "Using the uploaded photo as the identity reference, recreate the same person as they might have genuinely looked in the 1980s. Preserve facial identity, features, expression, skin tone, age, body proportions, pose, and composition.\n\nGive them authentic 1980s hairstyle, clothing, grooming, and styling appropriate to their age and context. Make it look like a real photograph actually taken in the 1980s, with natural analog film colors, soft flash, realistic lighting, subtle film grain, gentle softness, and slightly faded photographic texture.\n\nPhotorealistic, historically believable, natural, and identity-accurate. Avoid modern digital sharpness, AI-looking skin, exaggerated retro styling, heavy sepia, or artificial vintage filters.",
+    "createdAt": "2026-09-10T22:59:59.098689"
   }
 ]
