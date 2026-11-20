@@ -46,5 +46,17 @@
       "centered"
     ],
     "prompt": "Hyper-detailed cinematic movie poster: centered close-up portrait of a middle-aged man's face constructed entirely from thousands of bullets, shells, casings and gun parts — rifle rounds form the hairline, clustered small cartridges create skin texture, spent casings and copper tips sculpt shadows and highlights, collar and suit built from stacked blackened bullets, tie assembled from brass shells. Piercing icy blue photorealistic eyes with reflective catchlights, neutral solemn expression, crisp jawline. Stark white minimalist background with a thin barcode-like border, bold large elegant serif title at the top reading \"LORD OF WAR\" and a small tagline beneath: \"Where there's a will, there's a weapon.\" Studio lighting, high contrast, dramatic rim light, extreme macro texture detail, photoreal collage, 300 dpi poster ratio vertical, subtle film grain and soft vignette for cinematic mood."
+  },
+  {
+    "id": 5,
+    "title": "gta",
+    "category": "poster",
+    "imageUrl": "images/poster/gta.webp",
+    "tool": "Midjourney",
+    "tags": [
+      "gta6"
+    ],
+    "prompt": "An official \"Grand Theft Auto VI\" (GTA 6) illustrated loading screen artwork, featuring the South Asian man from image_0.png, retaining his exact face, beard, cheerful smile, and natural pose but fully reimagined in the signature hand-drawn, heavily stylized Rockstar Games aesthetic with bold outlines, rich comic-style shading, and vibrant high-contrast colors.\nHe stands in the center-right of the frame, in his exact front-facing pose with both hands casually tucked into his trouser pockets, looking directly forward with an open, friendly grin. He wears a similar light-brown/tan casual collared shirt, but styled slightly more rugged, worn unbuttoned over a white t-shirt, with dark sunglasses hooked into the collar, paired with his dark trousers and a wristwatch on his left wrist.\nThe setting is a bustling, sunset-drenched Vice City (Miami) boulevard at dusk, bathed in warm orange, pink, and purple twilight. Behind him, tall palm trees are silhouetted against a vibrant gradient sky with power lines cutting across. On the left side, a stylized \"GRAND THEFT AUTO VI\" logo is prominently displayed in the upper-left, with \"VI\" in metallic magenta and orange gradient, and \"grand theft auto\" in its classic white font. In the bottom right corner, a small yellow Rockstar Games logo \"R★\" is visible.\nIn the background, bustling retro-modern urban scenery unfolds with crowded sidewalks, neon-lit storefronts (like \"LIQUOR\" and \"HOTEL\" signs), graffiti-covered walls, and parked or cruising vehicles—including a sleek modern sports car (like a BMW i8) and a classic muscle car (like a Dodge Challenger) on the palm-lined street. The entire scene is drenched in dramatic sunset backlighting, golden hour glows, and neon reflections, captured in a hand-drawn, ink-and-brush digital art style.",
+    "createdAt": "2026-11-20T23:12:24.549809"
   }
 ]
